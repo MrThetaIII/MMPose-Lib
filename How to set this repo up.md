@@ -6,6 +6,7 @@
 
 ```shell
 conda create --name mmpose-env python=3.9 -y
+conda activate mmpose-env
 ```
 
 ## Step 2: Correct virsion of PyTorch
