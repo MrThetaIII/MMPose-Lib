@@ -1,15 +1,17 @@
 # How to set this up?
 
+## Step 0: Install conda, cuda-toolkit 11.8
+
 ## Step 1: Virtual Env with python 3.8
 
 ```shell
-conda create --name openmmlab python=3.8 -y
+conda create --name mmpose-env python=3.9 -y
 ```
 
 ## Step 2: Correct virsion of PyTorch
 
 ```shell
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+conda install pytorch==2.0 torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 ```
 
 you can test with:
@@ -28,10 +30,11 @@ pip install -U openmim
 
 ```shell
 pip install mmengine==0.10.7
-pip install mmcv==2.1.0
+mim install mmcv==2.1.0
 pip install mmdet==3.3.0
 pip install -r requirements.txt
 pip install -v -e .
+pip install numpy==1.23.5 --force-reinstall
 ```
 
 ## Step 5: Download the demo files
