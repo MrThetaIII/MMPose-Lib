@@ -2,7 +2,7 @@
 
 ## Step 0: Install conda, cuda-toolkit 11.8
 
-## Step 1: Virtual Env with python 3.8
+## Step 1: Virtual Env with python 3.9
 
 ```shell
 conda create --name mmpose-env python=3.9 -y
